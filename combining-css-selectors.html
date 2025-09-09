@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combining CSS Selectors</title>
+    <link rel="stylesheet" href="./style/combining.css">
+</head>
+<body>
+    <!-- 
+    *** VIEW CSS FILE combining.css FOR SOLUTION ***
+    1) Make h1 and h2 PURPLE
+    2) Make "Do these things today!" RED
+    3) Make "Wash Clothes BLUE"
+    4) Make "Read" an "Math Questions" GREEN
+    --> 
+    <h1>To Do List</h1>
+    <h2>Monday</h2>
+    <div class="box">
+        <p class="done">Do these things today!</p>
+        <ul class="list">
+            <li>Wash Clothes</li>
+            <li class="done">Read</li>
+            <li class="done">Maths Questions</li>
+        </ul>
+        <p>Test sentence</p>
+  </div>
+
+    <ul>
+        <p class="done">Other items</p>
+    </ul>
+    <p>The best preparation for tomorrow is doing your best today.</p>
+
+
+<pre>
+h1, h2 {
+    color: blueviolet
+}
+/* This changes all h1 and h2 element to blueviolet color */
+
+
+/* Parent and child relationship */
+/* child selector */
+.box > p {
+    color: red;
+} 
+/* Above means "box" is parent, "p" is child. Must only have 1 level underneath */
+/* Direcly below the div with class box is a &ltp&gt element which is the child. Anything below the &ltp&gt element are grandchild
+*/
+
+
+/* Ancestor and descendant relationship */
+/* Descendant selector */
+.box p {
+    color: red;
+}
+
+/* Ancestor and Descendant relationship
+This means the "box" is the ancestor and "p" is descendent
+anything below the class "box" with the "p" element, change the text to color red
+*/
+
+
+/* Ancestor and descendant relationship */
+/* Descendant selector */
+.box li {
+    color: blue;
+}
+/* This changes all list elements to blue */
+
+
+
+/* Chaining selector */
+li.done {
+    color: green;
+}
+/* if adding id to a selector, use the # sign. eg. li#done */
+
+
+/* Multiple combiners */
+ul p.done {
+    font-size: 0.5rem;
+}
+
+
+
+</pre>
+</body>
+</html>

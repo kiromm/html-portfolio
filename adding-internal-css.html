@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding Internal CSS</title>
+    <style>
+
+        /* group */
+        h1, h2 {
+            color: blueviolet
+        }
+
+        .box p {
+            color: red;
+        }
+
+        /* Parent & Child */
+        .box > p {
+            color: red;
+        } 
+        /* Above means "box" is parent, "p" is child. Must only have 1 level underneath */
+
+        /* Descendent */
+        .box li {
+            color: blue;
+        }
+        /* ".box" is the "Ancestor" and "li" is the "descendent". Anything and everything below the class box that has a <li> element will be blue
+
+        /* Chained */
+        li.done {
+            color: green;
+        }
+        /* if chaining an id for example use "li#done"
+
+        /* Multiple Combiners */
+        ul p.done {
+            font-size: 0.5rem;
+        }
+
+        /* <span> element using class and . */
+        .span-red {
+            color: red;
+        }
+
+        /* <span> element using id and # */
+        #span-blue {
+            color: blue;
+            font-style: italic;
+            font-weight: bold;
+            text-decoration: underline;
+            font-family: Verdana;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Internal CSS & CSS Selectors</h1>
+    <p>Internal CSS gets added in the &lthead&gt &ltstyle&gt Add CSS here &lt/style&gt &lt/head&gt</p>
+
+    <p>View the html file for this to see more.</p>
+
+    <h1>To Do List</h1>
+    <h2>Monday</h2>
+    <div class="box">
+        <p class="done">Do these things today!</p>
+        <ul class="list">
+        <li>Wash Clothes</li>
+        <li class="done">Read</li>
+        <li class="done">Maths Questions</li>
+        </ul>
+        <p>Test sentence</p>
+    </div>
+
+  <ul>
+    <p class="done">Other items</p>
+  </ul>
+  <p>The best preparation for tomorrow is doing your best today.</p>
+
+  <hr />
+
+  <p>Use . (dot) if using class.</p>
+
+  <pre>
+    (in CSS)
+    .box { color: blue; }
+
+    (in HTML)
+    &ltp class="box"&gtSentence here&lt/p&gt
+  </pre>
+
+  <p>Use # (hash) if using ID.</p>
+
+  <pre>
+    (in CSS)
+    #box {color: blue;} 
+
+    (in HTML)
+    &ltp id="box"&gtSentence here&lt/p&gt
+  </pre>
+
+  <hr />
+
+  <h2>Using &ltspan&gt and CSS Selectors</h2>
+  <p>The h2 above is colored because of the CSS rule above</p>
+
+  <p>I want to make the next word color <span class="span-red">red </span></p>
+
+  <p>I want to make the next word color <span id="span-blue">blue </span></p>
+
+    
+</body>
+</html>

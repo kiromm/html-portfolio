@@ -1,0 +1,45 @@
+/* Write your code here: */
+/* Group Selector */
+h1, h2 {
+    color: blueviolet
+}
+/* This changes all h1 and h2 element to blueviolet color */
+
+/* Parent and child relationship */
+/* child selector */
+.box > p {
+    color: red;
+} 
+/* Above means "box" is parent, "p" is child. Must only have 1 level underneath */
+/* Direcly below the div with class box is a <p> element which is the child. Anything below the <p> element are grandchild
+*/
+
+/* Ancestor and descendant relationship */
+/* Descendant selector */
+.box p {
+    color: red;
+}
+/* Ancestor and Descendant relationship
+This means the "box" is the ancestor and "p" is descendent
+anything below the class "box" with the "p" element, change the text to color red
+*/
+
+/* Ancestor and descendant relationship */
+/* Descendant selector */
+.box li {
+    color: blue;
+}
+/* This changes all list elements to blue */
+
+/* Chaining selector */
+li.done {
+    color: green;
+}
+/* if adding id to a selector, use the # sign. eg. li#done */
+
+/* Multiple combiners */
+ul p.done {
+    font-size: 0.5rem;
+}
+
+

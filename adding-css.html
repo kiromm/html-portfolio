@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding CSS</title>
+    <link rel="stylesheet" href="./style/adding-css.css"/>
+</head>
+<body>
+    <h1>Adding CSS - Inline, Internal, External</h1>
+
+    <h2 style="font-weight: bold; text-decoration: underline;">Inline</h2>
+
+    <p>CSS goes inside the opening tag of the element.</p>
+
+    <p> &ltp style="color: blue;">This will be color blue&lt/p&gt</p>
+
+    <p style="color: blue;">This will be color blue</p>
+
+    <p style="font-weight: bold; text-decoration: underline;">style="font-weight: bold; text-decoration: underline;"</p>
+
+    <p style="font-weight: bold; text-decoration: overline;">style="font-weight: bold; text-decoration: overline;"</p>  
+
+    <p style="font-weight: bold; text-decoration: line-through;">style="font-weight: bold; text-decoration: line-through;"</p> 
+
+    <p style="font-style: italic;">style="font-style: italic;"</p>
+
+    <p style="font-family: courier new;">style="font-family: courier new;"</p>
+
+    <p style="font-size: 40px;">style="font-size:40px;"</p>
+
+    <p style="color: red; font-family: Verdana; font-size: 20px;">style="color: red; font-family: Verdana; font-size: 20px;"</p>
+
+    <hr />
+
+    <h2 style="font-weight: bold; text-decoration: underline;">Internal & CSS Selectors</h2>
+
+    <p>CSS goes inside the &lthead&gt &ltstyle&gt CSS in here &lt/style&gt &lt/head&gt</p>
+    
+    <a href="./adding-internal-css.html">View here for internal CSS</a>
+
+    <hr />
+
+    <h2 style="font-weight: bold; text-decoration: underline;">External</h2>
+
+    <p>External CSS uses a .css file which has all the CSS for the html</p>
+
+    <p>This goes in the &lthead7gt section &ltlink rel="stylesheet" href="./style/adding-css.css"/&gt</p>
+    
+    <p>This <span style="color: red;"">href="./style/adding-css.css"</span> is the location of the CSS file for the HTML</p>
+
+    <a href="./adding-external-css.html">View here for external CSS</a>
+
+    <hr />
+
+    <h2 style="font-weight: bold; text-decoration: underline;">Using CSS inside an element using &ltspan&gt &lt/span&gt</h2>
+
+    <p>If want to style something inside this &ltp&gt element. I use the &ltspan&gt element. Like this <br /><br />
+
+    &ltp&gt I want to make the next word color red &ltspan style="color: red;"&gtred&&lt/span&gt &lt/p&gt</p>
+
+    <p>I want to make the next word color <span style="color: red;">red </span></p>
+
+    <p>You can also use CSS selectors for this</p>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    
+</body>
+</html>

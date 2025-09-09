@@ -1,0 +1,46 @@
+.pclass {
+    color:blue;
+    font-weight:bold;
+    font-size:20px;
+    text-decoration:underline;
+    font-family:Verdana;
+}
+#pid {
+    color:blueviolet;
+}
+
+/* group */
+h2, h3 {
+    color: #6C14BE;
+}
+
+/* child */
+.box > p {
+    color: firebrick;
+}
+/* This means the "box" is the parent and the "p" is the child. Must have only 1 nested level below box.
+
+/* descendent */
+.box li {
+    color: blue;
+}
+/* This means the "box" is the ancestor and "li" is the "descendent." Anything and everything below the class box that has the <li> element will be blue
+
+/* chained */
+li.done {
+    color: green;
+}
+/* This is chaining a class. If chaining an id it would be "li#done"
+
+/* multiple combiners */
+ul p.done {
+    font-size: 2rem;
+}
+
+.span-yellowgreen {
+    color: yellowgreen;
+}
+
+#span-green {
+    color: green;
+}

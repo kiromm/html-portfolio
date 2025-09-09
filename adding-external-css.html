@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding External CSS</title>
+    <link rel="stylesheet" href="./style/adding-external-css.css"/>
+</head>
+<body>
+
+
+<h1>External CSS, Class Selector & &ltspan&gt&lt/span&gt Element</h1>
+
+<p class="pclass">Paragraph 1 - class</p>
+<pre>
+&ltp ="pclass"&gtParagraph 1 - class&lt/p&gt
+.pclass {
+    color:blue;
+    font-weight:bold;
+    font-size:20px;
+    text-decoration:underline;
+    font-family:Verdana;
+}    
+</pre>
+<p id="pid">Paragraph 2 - id</p>
+<pre>
+&ltp id="pid"&gtParagraph 2 - id&lt/p&gt    
+#pid {
+    color:blueviolet;
+}
+</pre>
+
+<hr />
+
+
+
+  <h2>To Do List</h2>
+  <h3>Monday</h3>
+  <div class="box">
+    <p class="done">Do these things today!</p>
+    <ul class="list">
+      <li>Wash Clothes</li>
+      <li class="done">Read</li>
+      <li class="done">Maths Questions</li>
+    </ul>
+    <p>Test sentence</p>
+
+<pre>
+/* group */
+h2, h3 {
+    color: #6C14BE;
+}
+
+/* child */
+.box > p {
+    color: firebrick;
+}
+/* This means the "box" is the parent and the "p" is the child. Must have only 1 nested level below box.
+
+
+/* descendent */
+.box li {
+    color: blue;
+}
+/* This means the "box" is the ancestor and "li" is the "descendent." Anything and everything below the class box that has the &ltli&gt element will be blue
+
+
+/* chained */
+li.done {
+    color: green;
+}
+/* This is chaining a class. If chaining an id it would be "li#done"
+
+
+/* multiple combiners */
+ul p.done {
+    font-size: 2rem;
+}
+
+
+.span-yellowgreen {
+    color: yellowgreen;
+}
+
+
+#span-green {
+    color: green;
+}
+
+</pre>
+
+  </div>
+
+  <ul>
+    <p class="done">Other items</p>
+  </ul>
+  <p>The best <span class="span-yellowgreen">preparation</span> for tomorrow is doing your best <span id="span-green">today.</span></p>
+
+  <pre>
+   &ltp&gtThe best &ltspan class="span-yellowgreen"&gtpreparation&lt/span&gt for tomorrow is doing your best &ltspan id="span-green"&gttoday.&lt/span&gt&lt/p&gt
+    </pre>
+
+  <p>The best preparation for tomorrow is doing your <span style="color:red;">best</span></p>
+
+  <pre>
+  &ltp&gtThe best preparation for tomorrow is doing your &ltspan style="color:red;"&gtbest&lt/span&gt&lt/p&gt
+  </pre>
+    
+</body>
+</html>
